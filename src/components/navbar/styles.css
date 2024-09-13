@@ -1,0 +1,32 @@
+.container_nav {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+
+    & .item_route {
+        width: 232px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        & .item_route {
+            width: auto;
+            flex: 1;
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+}

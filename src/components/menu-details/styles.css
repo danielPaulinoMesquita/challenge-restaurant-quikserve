@@ -1,0 +1,22 @@
+.container_menu_details {
+    padding-top: 32px;
+
+    & .container_menu_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        & img {
+            width: 128px;
+            height: 85px;
+            border-radius: 6px;
+        }
+
+        & .color_menu {
+            color: #464646;
+        }
+    }
+}
+

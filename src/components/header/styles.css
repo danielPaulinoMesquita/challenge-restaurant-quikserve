@@ -1,0 +1,24 @@
+.container_header {
+    height: 202px;
+    color: #FFFFFF;
+
+    & .img_header {
+        height: 150px;
+        width: auto; /* Maintain aspect ratio */
+
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .container_header {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 8px; /* Adjust padding for smaller screens */
+
+        & .img_header {
+            height: 100px; /* Reduce image height on mobile */
+            width: 100%; /* Make image responsive */
+            object-fit: cover; /* Cover the space while maintaining aspect ratio */
+        }
+    }
+}

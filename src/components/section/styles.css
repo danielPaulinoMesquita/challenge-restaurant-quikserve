@@ -1,0 +1,44 @@
+.container_section {
+    display: flex;
+}
+
+.item_section {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    & .carrousel_card {
+        width: 104px;
+        height: 146px;
+        text-align: center;
+        padding: 12px 0;
+
+        & .img_product {
+            width: 74px;
+            height: 74px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+
+        & .desc {
+            font-family: Roboto, sans-serif;
+            color: #121212;
+        }
+    }
+
+    & .selected {
+        border-bottom: 1px solid;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .item_section {
+
+        & .carrousel_card {
+            padding: 0;
+
+        }
+    }
+}

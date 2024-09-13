@@ -1,0 +1,23 @@
+.container_search {
+    display: flex;
+    padding: 0 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: solid 1px #8A94A4;
+    background-color: #FFFFFF;
+
+    & .search {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        height: 44px;
+        border: none;
+        width: 98%;
+        outline: none;
+
+        &::placeholder {
+            font-family: Roboto, sans-serif;
+            padding-left: 5px;
+        }
+
+    }
+}
