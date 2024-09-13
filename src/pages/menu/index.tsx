@@ -6,17 +6,24 @@ import Basket from "../../components/basket";
 import Header from "../../components/header";
 import Search from "../../components/search";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchMenu, fetchVenue} from "../../store/venueSlice";
+import {changeSection, fetchMenu, fetchVenue} from "../../store/venueSlice";
 import {AppDispatch} from "../../store/store";
 
 const Menu = () => {
     const dispatch: AppDispatch = useDispatch();
-    // const { loading, error, settings, currency } = useSelector((state: any) => state.getVenue); todo tirar depois
+    const { loading, sections } = useSelector((state: any) => state.getVenue);
 
     useEffect(() => {
         dispatch(fetchVenue());
         dispatch(fetchMenu());
     }, [dispatch])
+
+    useEffect(() => {
+        if (!loading && sections) {
+            const firstSection = sections[0]
+            dispatch(changeSection(firstSection.id))
+        }
+    }, [sections]);
 
     return (
         <div className="container">

@@ -41,8 +41,7 @@
 
 .basket_card {
     width: 320px;
-    min-height: 129px;
-    height: auto;
+    height: max-content;
     box-shadow: 0 2px 14px 0 #00000024;
 }
 

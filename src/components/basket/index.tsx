@@ -15,11 +15,17 @@ const Basket = () => {
         currency: 'GBP',
     });
 
+    let real = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+    });
+
     const totalValue =  items.reduce((sum,item) => {
         return sum + item.valueTotal
     }, 0)
 
     const subTotal =  pounds.format(totalValue/7.40)
+    const total = real.format(totalValue)
 
     const incrementQtd = (id: number | null) => {
         setItems(prevItems => {
@@ -91,15 +97,20 @@ const Basket = () => {
                 }
             </div>
 
-            <div className="footer_sub_total">
-                <div>Sub total</div>
-                <div className="qtd">{`${subTotal}`}</div>
-            </div>
+            { totalValue > 0 && (
+                <div>
+                    <div className="footer_sub_total">
+                        <div>Sub total</div>
+                        <div className="qtd">{`${subTotal}`}</div>
+                    </div>
 
-            <div className="footer_total">
-                <div>Total: </div>
-                <div className="qtd">{`${currency} ${totalValue}`}</div>
-            </div>
+                    <div className="footer_total">
+                        <div>Total:</div>
+                        <div className="qtd">{`${total}`}</div>
+                    </div>
+                </div>
+            )}
+
         </div>
     )
 }

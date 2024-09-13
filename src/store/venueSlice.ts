@@ -3,8 +3,6 @@ import axios from 'axios';
 import {IItem, ISection, IWebSettings} from "../shared/interfaces/MenuBody";
 import {IOrderItem} from "../shared/interfaces/Food";
 
-
-
 interface InitialState {
     loading: boolean;
     error: string | null;
@@ -78,7 +76,6 @@ const venueSlice = createSlice({
                 state.error = null;
             })
             .addCase(fetchMenu.fulfilled, (state, action) => {
-                console.log("ACTION PAYLOAD MENU: ", action)
                 state.loading = false;
                 state.sections = action.payload.sections;
             })
