@@ -56,3 +56,6 @@ I choose the vercel, because it is easier to do that and free, for a while.
 # The view of the challenge.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fT9BY4aYcE4/0.jpg)](https://www.youtube.com/watch?v=fT9BY4aYcE4)
+
+# DEPLOY VERCEL
+https://challenge-restaurant.vercel.app/
