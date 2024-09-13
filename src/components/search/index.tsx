@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.css'
-import Navbar from "../navbar";
 import searchIcon from '../../assets/img/search.svg'
 
 const Search = () => {

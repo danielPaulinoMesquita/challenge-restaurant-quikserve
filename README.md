@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Challenge QIKSERVE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi guys, it was a pleasure to participate in this challenge,
+I was able to use my knowledge and learn new things, it was worth a lot.
 
-## Available Scripts
+# HOW TO START APPLICATION
+Firstly run this project using the npm install for downloading the dependencies:
+### `npm install`
 
-In the project directory, you can run:
-
+Up the project using: 
 ### `npm start`
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+# About the challenge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ARCHITECTURE
 
-### `npm run build`
+I decided to follow the structure by `File Types`, I usually work with this type of structure, and also I tried to make more components.
+I wanted to create tests for those components and service layer for api requests, but I didn't have time for that. I was focusing on to delivery more fast possible.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+----
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## MISTAKES
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+My first view, I have an opinion that will be not so difficult to do the challenge,
+but I was coding and noticed that I made some wrong decisions, they are:
 
-### `npm run eject`
+### - Only use CSS
+The most of the time I prefer to use the pure css than libraries or frameworks css, reason of that,
+it depends on the project and if it is really necessary for the project,
+in this case, close to the final to done, it would be much better to use one framework like Tailwind or any other CSS library.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### - Mobile responsive
+I wanted to use CSS at begin and later use some library CSS to adapt the project to mobile,
+but it was a mistake, it was better to start using or already have to select one library to do that.
+_____
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## CHALLENGES
+### - Redux Toolkit
+I have some challenges like using the 'redux toolkit', I am familiar with the oldest approach of redux, but it is good for me,
+I was able to improve my knowledge in the control state and using the redux toolkit looks easier than others.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### - CSS in mobile version
+As I mentioned, it was difficult to make mobile responsive,
+I tried, but I didn't have time and I made a mistake when I chose not to use some library to do that.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### - CORS
+I have this difficulty, I got one solution to test in local but the problem back in the production.
 
-## Learn More
+### - Deploy in prod
+I choose the vercel, because it is easier to do that and free, for a while.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# The view of the challenge.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fT9BY4aYcE4/0.jpg)](https://www.youtube.com/watch?v=fT9BY4aYcE4)

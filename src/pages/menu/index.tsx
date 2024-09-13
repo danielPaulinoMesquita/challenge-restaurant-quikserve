@@ -23,7 +23,7 @@ const Menu = () => {
             const firstSection = sections[0]
             dispatch(changeSection(firstSection.id))
         }
-    }, [sections]);
+    },  [dispatch, loading, sections]);
 
     return (
         <div className="container">

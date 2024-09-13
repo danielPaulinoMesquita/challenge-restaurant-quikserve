@@ -26,13 +26,19 @@ const initialState: InitialState = {
 };
 
 const fetchVenue = createAsyncThunk('fetchVenue', async () => {
-    const url = '/api/venue'
+    const url = process.env.NODE_ENV === 'development'
+        ? '/challenge/venue/9'
+        : `${process.env.REACT_APP_API_URL}/challenge/venue/9`;
+
     const response = await axios.get(url);
     return response.data;
 });
 
 const fetchMenu = createAsyncThunk('fetchMenu', async () => {
-    const url = '/api/menu'
+    const url = process.env.NODE_ENV === 'development'
+        ? '/challenge/menu'
+        : `${process.env.REACT_APP_API_URL}/challenge/menu`;
+
     const response = await axios.get(url);
     return response.data;
 });
