@@ -20,8 +20,6 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, item }) => {
-    console.log("ITEM: ", item)
-
     const dispatch = useDispatch();
     const { settings, currency } = useSelector((state: any) => state.getVenue)
     const [qtdItem, setQtdItem] = useState(1);
